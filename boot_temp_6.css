@@ -1,0 +1,787 @@
+:root {
+    --orange: #f79f1f;
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --text-color-1: #444;
+    --text-color-2: #666;
+    --bg-color-1: #fff;
+    --bg-color-2: #eee;
+
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .4);
+
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    padding: 0;
+    transition: all 0.2s linear;
+
+
+}
+
+body {
+    /* min-height: 2000vh; */
+    background: var(--bg-color-2);
+
+}
+
+html {
+    scroll-behavior: smooth;
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+.first_section {
+    width: 100vw;
+    /* position: relative; */
+    height: 100vh;
+    background-image: url(https://thumbs.dreamstime.com/b/mountain-river-forest-north-cascades-national-park-washington-usa-73004270.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    /* z-index: -3; */
+    /* clip-path: polygon(100% 50%, 0% 80%, 0% 0%, 100% 0%); */
+    clip-path: polygon(0% 0%, 100% 0, 100% 60%, 0% 80%);
+    /* clip-path: url(#clip); */
+
+}
+
+.image_1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 128, 75, 0.551);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.nav_bar1,
+.nav_bar {
+    position: fixed;
+    top: 10%;
+    right: 7%;
+    background: var(--bg-color-1);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 20rem;
+    transform: scale(0);
+    /* display: none; */
+    transform-origin: top right;
+
+}
+
+.nav_bar1 {
+    position: fixed;
+    top: 10%;
+    right: 7%;
+}
+
+.active_nav {
+    transform: scale(1);
+    /* display: flex; */
+}
+
+.nav {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    border-radius: 0.5rem;
+
+}
+
+.nav_act {
+    color: var(--green);
+    background: var(--bg-color-2);
+}
+
+.nav:hover {
+    color: var(--green);
+    background: var(--bg-color-2);
+}
+
+
+#menu_btn1,
+#menu_btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: var(--bg-color-1);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+
+
+}
+
+/* #menu_btn1{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+} */
+
+.fa-crown {
+    font-size: 2rem;
+    color: var(--bg-color-1);
+    padding: 1rem;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.h_for_home {
+    color: var(--bg-color-1);
+    font-size: 5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 1% 0;
+}
+
+.p_for_home {
+    color: var(--bg-color-1);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 4% 0;
+}
+
+.btn {
+    background: var(--bg-color-1);
+    /* color: var(--green); */
+    border-radius: 25px;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: var(--bg-color-1);
+    letter-spacing: .4rem;
+}
+
+/* end home section */
+
+/* start adventure section */
+
+.adventure {
+    padding: 0% 4%;
+}
+
+.h_for_adventure {
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 4% 0%;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.content_2 {
+    flex: 1 1 20rem;
+
+}
+
+.content_22 {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+
+.h_for_adv_2 {
+    color: var(--text-color-1);
+    font-size: 1.5rem;
+    padding: 1% 0%;
+}
+
+.p_for_adv_2 {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.link {
+    color: var(--green);
+    font-size: 1.5rem;
+
+
+
+}
+
+.img_0_1 {
+    width: 55%;
+    box-shadow: var(--box-shadow);
+}
+
+.img_1_1 {
+    width: 50%;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: 20px;
+    right: -10px;
+}
+
+.img_2_1 {
+    width: 60%;
+    position: absolute;
+    top: 190px;
+    right: 210px;
+    box-shadow: var(--box-shadow);
+    display: none;
+}
+
+.second_back_img {
+
+    background: url(https://4kwallpapers.com/images/wallpapers/alps-mountains-mountain-range-summer-sunny-day-forest-clear-4480x2520-5384.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 120vh;
+    width: 100%;
+    /* clip-path: polygon(0 20%, 100% 100% ,100% 60% ,0 100%); */
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.image_11 {
+    width: 100%;
+    padding: 4rem 2rem;
+    height: 120vh;
+    background-color: rgba(0, 128, 75, 0.551);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.box {
+    background: var(--bg-color-1);
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+}
+
+#icon_22 {
+    font-size: 4rem;
+    color: var(--green);
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+/* end adv section */
+
+/* start plogs  */
+.plogs {
+    padding: 4% 4%;
+}
+
+.contain_4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+}
+
+.box_2 {
+    color: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image_01,
+.image_02,
+.image_00 {
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: rgba(0, 128, 75, 0.551); */
+    background: var(--green);
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
+
+}
+
+.image_01 {
+    background: var(--orange);
+}
+
+.image_02 {
+    background: rgba(0, 110, 255, 0.816);
+}
+
+.img_22_0 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: calc(0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+#h2_2,
+#h2_1,
+#h2 {
+    background: var(--green);
+    color: var(--bg-color-1);
+    font-size: 2.2rem;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    box-shadow: var(--box-shadow);
+    width: 12rem;
+
+}
+
+#h2_1 {
+    background: var(--orange);
+}
+
+#h2_2 {
+    background: rgba(0, 110, 255, 0.816);
+}
+
+.con_for_plog {
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    padding: 1rem 0;
+}
+
+.h_for_plogs1,
+.h_for_plogs {
+    color: var(--text-color-1);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    border-bottom: #666 solid 0.7px;
+}
+
+.h_for_plogs1 {
+    border-bottom: #666 solid 0;
+}
+
+.btn_0 {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_1 {
+    background: var(--green);
+    color: var(--bg-color-1);
+    font-size: 2.2rem;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    border-radius: 25px;
+
+}
+
+.btn_1:hover {
+    cursor: pointer;
+    letter-spacing: 0.3rem;
+}
+
+/* end plog section */
+/* start rev section */
+.review {
+    background: url(https://thumbs.dreamstime.com/b/mountain-river-forest-north-cascades-national-park-washington-usa-73004270.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 120vh;
+    width: 100%;
+    /* opacity: calc(0.5); */
+
+
+
+}
+
+.for_rev {
+    background: #eeeeeec4;
+    width: 100%;
+    height: 120vh;
+}
+
+.box_review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box_rev {
+    width: 80%;
+    /* display: flex; */
+
+}
+
+.box_rev1 {
+    /* flex: 1  90rem; */
+    padding: 3rem;
+    display: flex;
+    background: var(--bg-color-1);
+    margin: 1rem;
+    clip-path: polygon(8% 0, 100% 0, 95% 100%, 0 100%);
+    gap: 1rem;
+}
+
+.img_rev {
+    /* width: 30%; */
+    flex: 1 1 20rem;
+    align-items: center;
+    text-align: center;
+}
+
+.text_rev {
+    flex: 1 1 40rem;
+}
+
+.img_for_rev {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    /* width: 70%; */
+}
+
+/* enddddddddddddddddddddddddd  for rec */
+/* start for contact us */
+.booking {
+    padding: 7rem 0;
+    background: linear-gradient(to left,
+            var(--green),
+            rgba(0, 128, 75, 0.551));
+    display: flex;
+    justify-content: center;
+}
+
+.for_book {
+    width: 90%;
+    height: 100vh;
+}
+
+.img_book {
+    width: 100%;
+    background: url(https://www.imagescanada.ca/wp-content/uploads/2018/09/Best-nature-spots-to-take-photos-in-Canada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 4rem; */
+    height: 100%;
+}
+
+.part_book {
+    padding: 3rem;
+    width: 60%;
+    background: #eeeeeec4;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+
+
+}
+
+.h_for_book {
+    color: var(--green);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+#input {
+    background: var(--bg-color-1);
+    padding: 1.4rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    display: block;
+    margin: 2rem;
+    width: 20rem;
+}
+
+#input::placeholder {
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+
+}
+
+.form {
+    display: block;
+}
+
+.p_con {
+
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.radio {
+
+    accent-color: green;
+    width: 5px;
+    height: 25px;
+    border-radius: 50%;
+    display: none;
+
+}
+
+label {
+    font-size: 30px;
+
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 5px solid #01cc65;
+    border-radius: 50%;
+
+}
+
+/* input[type="radio"]:checked+label{
+    background-color: #01cc65;
+    color: #fff;
+} */
+input[type="radio"]:checked+label::before {
+    height: 16px;
+    width: 16px;
+    border: 8px solid #fff;
+    background-color: #01cc65;
+}
+
+.btn_2 {
+    margin: 2rem 0;
+    background: var(--green);
+    color: var(--bg-color-1);
+    font-size: 2.2rem;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* enddddddddddddddddddddddddddddddddddddddddddddddddd */
+/* start footer  */
+.footer {
+    padding: 4% 4%;
+    background: var(--bg-color-1);
+    background: #444;
+
+}
+
+.box_contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+#back{
+    background: linear-gradient(to left,
+    var(--green),
+    /* rgb(0, 188, 180),
+    rgb(196, 232, 107) */
+    rgba(0, 128, 75, 0.551)
+    );
+    /* background:url(https://colors.dopely.top/gradients/6IuCRVYvJcT) */
+}
+
+#h_for_adventure {
+    color: var(--green);
+    font-size: 5rem;
+    font-weight: bolder;
+    padding: 0% 0%;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to left,
+            var(--green),
+            rgba(0, 128, 75, 0.551));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text_last {
+    font-size: 2.5rem;
+    color: var(--bg-color-1);
+    padding: 1rem 0;
+
+}
+
+.links_2 {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color-2);
+    color: var(--bg-color-1);
+    padding: 0.7rem 0rem;
+
+}
+
+.box_foot .links_2 i {
+    padding-right: 0.5rem;
+    color: var(--green);
+}
+
+.box_foot .links_2:hover i {
+    padding-right: 2rem;
+    color: var(--green);
+}
+
+
+
+
+
+
+
+.cridet {
+    text-align: center;
+    border-top: 0.1rem solid var(--bg-color-1);
+    font-size: 2rem;
+    color: var(--bg-color-1);
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.color_green {
+    color: var(--green);
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html {
+        scroll-behavior: smooth;
+        font-size: 64.5%;
+
+    }
+}
+
+
+
+
+
+@media (max-width:500px) {
+    html {
+        scroll-behavior: smooth;
+        font-size: 44.5%;
+
+    }
+
+    .second_back_img {
+
+        height: 140vh;
+        width: 100%;
+
+    }
+
+    .contain_4 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1rem;
+    }
+
+    .image_11 {
+        width: 100%;
+        height: 140vh;
+        gap: 0.5rem;
+        padding: 0 1rem;
+        align-items: center;
+
+    }
+
+    .box_rev {
+        width: 92%;
+
+
+    }
+
+    .box_rev1 {
+
+        padding: 2rem;
+
+        clip-path: polygon(8% 0, 100% 0, 95% 100%, 0 100%);
+        gap: 2rem;
+    }
+    .box_foot{
+        text-align: center;
+       align-items: center;
+      }
+      .img_book {
+        
+        height: 60%;
+    }
+    .for_book {
+        width: 95%;
+        height: 100vh;
+    }
+    .part_book {
+       
+        clip-path: polygon(0 0, 100% 0, 90% 120%, 0 100%);
+    
+    
+    }
+
+
+
+}
